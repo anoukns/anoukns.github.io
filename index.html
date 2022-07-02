@@ -3,183 +3,222 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Anouk Nicolopoulos</title>
-    <link rel="stylesheet" href="css/style.css">
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script type="text/javascript" src="javascript/page_setter.js"></script>
+    <title>Anouk Nicolopoulos-Salle</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    body {
+        background-color: #F5F5F5;
+    }
+    a:link {
+        color: #B22222;
+    }    
+    a:visited {
+        color: #B22222;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    .column {
+        float: left;
+    }
+
+    .left {
+        width: 20%;
+    }
+
+    .right {
+        width: 50%;
+    }
+
+    .row:after {
+        content: "";
+        display: table;
+    clear: both;
+    }
+
+    @media screen and (max-width: 600px) {
+        .column {
+            width: 100%;
+        }
+    }
+</style>
 </head>
 
 <body>
-    <div id="bloc_page">
+    <div class="row">
 
-        <!--  - - - - - - - - -->
-        <!--      Header      -->
-        <!--  - - - - - - - - -->
-        <header>
-
-        </header>
-
-
-
-
-        <!--  - - - - - - - - - -->
-        <!--       Corps        -->
-        <!--  - - - - - - - - - -->
-
-
-        <section>
-
-            <aside id="coords">
-                <div style="float:left">
-                    <p>
-                        <span id="nom">Anouk Nicolopoulos</span><br />
-                        anouk.nicolopoulos@math.uzh.ch<br />
-                        <br /><br />
-                        Office J04 <br />
-                        Institute of Mathematics <br />
-                        University of Zurich <br />
-                        Winterthurerstrasse 190 - CH-8057 Zurich <br />
-                    </p>
-                </div>
-
-
-                <div style="float:right">
-                    <nav>
-                        <ul>
-                            <a href="index_fr.html">Francais</a>
-                        </ul>
-                        <img src=images/img.jpg height="150" id="portrait" />
-                    </nav>
-                </div>
-
-            </aside>
-
+        <div class="column left">
             <p>
-                I am a postdoc at the University of Zurich since August 2020, in the <a
-                    href="https://www.math.uzh.ch/compmath/">Computational Mathematics group</a> of Stefan Sauter.
-
-
-                I have defended my PhD entitled <i>Variational formulations for resonant Maxwell's equations and
-                    problems at corners for wave propagation</i> (manuscript <a href="documents/my_thesis.pdf">here</a>)
-                on December 9th 2019 at Laboratoire Jacques-Louis Lions. This work was supervised by <a
-                    href="https://www.ljll.math.upmc.fr/~despres/">Bruno Despr&eacute;s</a> and <a
-                    href="https://www.ljll.math.upmc.fr/~campos/">Martin Campos Pinto</a>. Here is my <a
-                    href="documents/cv_en.pdf">CV</a>.
-
+                <span id="nom">
+                    <h2>Anouk Nicolopoulos-Salle</h2>
+                </span> <br />
+                <i>anoukns at proton dot me</i> <br />
+                <img src=documents/image.png height="250" id="portrait" /> <br />
+                
             </p>
+        </div>
+
+        <div class="column right">
+            <p>
+                Hi!
+                <br />
+                I am an applied mathematician working as an R&D engineer and developing algorithms in python at <a href="https://www.ose-engineering.fr/">OSE Engineering</a>.
+                <br /> <br />
+                Before that I was a post-doctoral researcher at the <a href="https://www.math.uzh.ch/">University of Zurich</a>.
+                I completed my PhD in 2019 with <a href="https://www.ljll.math.upmc.fr/~despres/">Bruno Despr&eacute;s</a> and
+                <a href="https://www.ljll.math.upmc.fr/~campos/">Martin Campos Pinto</a> at <a href="https://ljll.math.upmc.fr/">Laboratoire Jacques-Louis Lions</a> (Sorbonne Université).
+                I worked on electromagnetic wave propagation models, such as resonant Maxwell's equation to model fusion plasma in a tokamak,
+                and Helmholtz equation.
+                <br /> <br />
+                Aside from that, I am also a member of Images des Mathématiques' <a href="https://images.math.cnrs.fr/-Revue-de-presse-.html">monthly press review</a>,
+                participating in the writing and editing.
+                It is a review of press articles from the past month that deal in some way with mathematics, issued on the first of every month.
 
 
-            <h5>Research interests</h5>
-            <ul>
-                <li><i>Heterogeneous Helmholtz equation</i> </li>
-                <li><i>Corner and cross-point treatment for DDM formulations of Helmholtz equation</i>
-                    <ol>
-                        <li>Corners and stable optimized domain decomposition methods for the Helmholtz problem, with B.
-                            Despr&eacute;s and B. Thierry, submitted. [<a
-                                href="https://hal.archives-ouvertes.fr/hal-02612368/document">preprint</a>]
+                
+                <h3>Publications</h3>
+                    <ul>
+                        <li><i>Optimized transmission conditions in domain decomposition methods with cross-points for Helmholtz equation</i>
+                            <br />
+                            with B. Despr&eacute;s and B. Thierry
+                            <br />
+                            SIAM Journal on Numerical Analysis, 2022
+                            <br />
+                            [<a href="https://hal.archives-ouvertes.fr/hal-03230250/document">preprint</a>, article]
                         </li>
-                    </ol>
-                </li>
-                <li><i>Resonant Maxwell's equations</i>
-                    <ol>
-                        <li>A variational formulation for coupled degenerate elliptic equations with different signs,
-                            with M. Campos Pinto, P. Ciarlet Jr. and B. Despr&eacute;s, IMA Journal of Applied
-                            Mathematics (2020). [<a
-                                href="https://hal.archives-ouvertes.fr/hal-02142631/document">preprint</a>, <a
+
+                        <li><i>Corners and stable optimized domain decomposition methods for the Helmholtz problem</i>
+                            <br />
+                            with B. Despr&eacute;s and B. Thierry
+                            <br />
+                            Numerische Mathematik, 2021
+                            <br />
+                            [<a
+                                href="https://hal.archives-ouvertes.fr/hal-02612368/document">preprint</a>, <a
+                                href="https://doi.org/10.1007/s00211-021-01251-2">article</a>, <a
+                                href="https://gitlab.onelab.info/doc/models/-/tree/master/DDM-Corner-Helmholtz-2D">code</a>]
+                                
+                        </li>
+                        
+                        <li><i>A variational formulation for coupled degenerate elliptic equations with different signs</i>
+                            <br />
+                            with M. Campos Pinto, P. Ciarlet Jr. and B. Despr&eacute;s
+                            <br />
+                            IMA Journal of Applied Mathematics, 2020
+                            <br />
+                            [<a href="https://hal.archives-ouvertes.fr/hal-02142631/document">preprint</a>, <a
                                 href="https://doi.org/10.1093/imamat/hxaa001">article</a>]
                         </li>
 
-                        <li>A stable formulation of resonant Maxwell's equations in cold plasma, with M. Campos Pinto
-                            and B. Despr&eacute;s, Journal of Computational and Applied Mathematics (2019). [<a
-                                href="https://hal.archives-ouvertes.fr/hal-01743546v3/document">preprint</a>, <a
+                        <li><i>A stable formulation of resonant Maxwell's equations in cold plasma</i>
+                            <br />
+                            with M. Campos Pinto and B. Despr&eacute;s
+                            <br />
+                            Journal of Computational and Applied Mathematics, 2019
+                            <br />
+                            [<a href="https://hal.archives-ouvertes.fr/hal-01743546v3/document">preprint</a>, <a
                                 href="https://doi.org/10.1016/j.cam.2019.05.007">article</a>]
                         </li>
-                    </ol>
-                </li>
-            </ul>
 
+                        <li><a href="documents/my_thesis.pdf"><i>Variational formulations for resonant Maxwell's equations and
+                        problems at corners for wave propagation</i></a>
+                        <br />
+                        PhD thesis, 2019
+                        </li>
+                    </ul>
 
-            <h5>Talks</h5>
-            <li>11/12/20: <a href="https://www.math.cuhk.edu.hk/conference/dd26/?Conference-Home">DD26</a>, 26th
-                International Domain Decomposition Conference, Chinese University of Hong Kong (online) </li>
-            <li>03/12/20: Graduate Applied Math Colloquium, ETHZ-UZH (online)</li>
-            <li>23/11/20: <a href="https://jcjc_ondes.pages.math.cnrs.fr">JCJC Ondes</a>, INRIA Sophia Antipolis
-                (online)</li>
-            <li>10/02/20: Talk at IRFM, CEA Cadarache</li>
-            <li>30/08/19: <a href="https://www.waves2019.at/">WAVES</a>, 14th International Conference on Mathematical
-                and Numerical Aspects of Wave Propagation, Vienna</li>
-            <li>17/07/19: <a href="https://iciam2019.org/index.php">ICIAM</a>, 10th International Congress on Industrial
-                and Applied Mathematics, Valencia </li>
-            <li>25/04/19: Seminar Math&eacute;matiques Appliqu&eacute;es, Laboratoire Jean Leray, Universit&eacute; de
-                Nantes</li>
-            <li>26/02/19: Seminar Equations aux d&eacute;riv&eacute;es partielles, IRMA, Universit&eacute; de Strasbourg
+            <h3>Talks</h3>
+            <dl>
+            <dt> 2021 </dt>
+                <dd> <a href="https://wavecomplexity.univ-cotedazur.fr/events/wine/">WINE</a>, Wavecomplexity International Networking Event,
+                Université Côte d'Azur (online) [<a href="documents/Xpoints_poster.pdf">poster</a>] </dd>
+            <dt>2020</dt>
+                <dd><a href="https://www.math.cuhk.edu.hk/conference/dd26/?Conference-Home">DD26</a>, 26th
+                International Domain Decomposition Conference, Chinese University of Hong Kong (online)</dd>
+                <dd> Graduate Applied Math Colloquium, ETHZ-UZH (online)</dd>
+                <dd> <a href="https://jcjc_ondes.pages.math.cnrs.fr">JCJC Ondes</a>, INRIA Sophia Antipolis
+                (online)</dd>
+                <dd> Talk at IRFM, CEA Cadarache </dd>
+            <dt>2019</dt>
+                <dd><a href="https://www.waves2019.at/">WAVES</a>, 14th International Conference on Mathematical
+                and Numerical Aspects of Wave Propagation, Vienna</dd>
+                <dd><a href="https://iciam2019.org/index.php">ICIAM</a>, 10th International Congress on Industrial
+                and Applied Mathematics, Valencia </dd>
+                <dd>Séminaire Math&eacute;matiques Appliqu&eacute;es, Laboratoire Jean Leray, Universit&eacute; de
+                Nantes</dd>
+                <dd>Séminaire Équations aux d&eacute;riv&eacute;es partielles, IRMA, Universit&eacute; de Strasbourg</dd>
             </li>
-            <li>22/10/18: <a href="http://www.ipp.mpg.de/NumKin2018">NumKin 2018</a>, Garching</li>
-            <li>24/07/18: <a href="http://www.wccm2018.org/MS_813">WCCM 2018</a>, 13th World Congress in Computational
-                Mechanics, New York</li>
-            <li>09/07/18: <a href="http://icosahom2018.org/">ICOSAHOM 2018</a>, International Conference On Spectral And
-                High Order Methods, London</li>
-            <li>29/06/18: <a href="http://www.plasapar.com/en/plas-par-young">PLAS@PAR Young Researcher's day</a>, SFP,
-                Paris</li>
-            <li>27/11/17: <a href="http://ipl2017.gforge.inria.fr/pages/program.html">Inria Project Lab FRATRES</a>
-                annual meeting, Rennes</li>
-            <li>03/07/17: <a href="https://indico.math.cnrs.fr/event/1831/">WAFU</a>, CEA-EDF-Inria summer school on
-                Waves and Fusion Plasmas, Paris</li>
-            <li>15/05/17: <a href="https://cceevents.umn.edu/waves-2017">WAVES</a>, 13th International Conference on
-                Mathematical and Numerical Aspects of Wave Propagation, Minneapolis</li>
-            <li>13/12/16: LJLLs students working group <a href="https://ljll.math.upmc.fr/gtt/index.php">(GTT)</a></li>
-
-            </p>
-            <h5>Poster</h5>
-
-            <li>28/08/18: <a href="https://indico.math.cnrs.fr/event/2915/">ABPDE 3</a>, Asymptotic Behavior of systems
-                of PDE arising in physics and biology : theoretical and numerical points of view, Lille</li>
-
-            <li>13/03/18: <a
-                    href="http://gdr-ondes.cnrs.fr/2018/02/08/advanced-theoretical-and-numerical-methods-for-waves-in-structured-media/">Advanced
+            <dt>2018</dt>
+                <dd><a href="http://www.ipp.mpg.de/NumKin2018">NumKin 2018</a>, Garching</dd>
+                <dd><a href="https://indico.math.cnrs.fr/event/2915/">ABPDE 3</a>, Asymptotic Behavior of systems
+                of PDE arising in physics and biology : theoretical and numerical points of view, Lille [<a href="documents/Maxwell_poster.pdf">poster</a>]</dd>
+                <dd><a href="http://www.wccm2018.org/MS_813">WCCM 2018</a>, 13th World Congress in Computational
+                Mechanics, New York</dd>
+                <dd><a href="http://icosahom2018.org/">ICOSAHOM 2018</a>, International Conference On Spectral And
+                High Order Methods, London</dd>
+                <dd><a href="http://www.plasapar.com/en/plas-par-young">PLAS@PAR Young Researcher's day</a>, SFP,
+                Paris</dd>
+                <dd><a href="http://gdr-ondes.cnrs.fr/2018/02/08/advanced-theoretical-and-numerical-methods-for-waves-in-structured-media/">Advanced
                     Theoretical and Numerical Methods for Waves in Structured Media</a>, GDR Ondes, Institut Langevin,
-                Paris</li>
-
-            <a href="documents/poster.pdf">(poster)</a>
-
-            <p>
-            <h5>Teaching</h5>
-            <i>Current (UZH)</i>
-            <li>Numerics 1 - MAT801: tutorials</li>
-            <li>Practical training in numerics - MAT820: project supervision</li>
-            <i>Past (UZH)</i>
-            <li>Programming in Python - MAT101: computational classes and project</li>
-            <i>Past (Sorbonne)</i>
-            <li>Multi-variable functions - 2M216: tutorials</li>
-            <li>Measure theory - 3M263: tutorials</li>
-            <li>Series of functions and parameter-dependent integrals - 2M261: oral examinations</li>
-            <li>Intro to numerical approximation - 2M314: computational classes</li>
-            <li>Mathematics for sciences - 1MA001: tutorials</li>
-            <li>Python programmation for maths - 3MA100: computational classes</li>
-            <li>Numerical methods for ODEs - 3MA236: computational classes</li>
-            </p>
-
-
-            <!--  - - - - - - - - - -->
-            <!--       Footer       -->
-            <!--  - - - - - - - - - -->
+                Paris [<a href="documents/Maxwell_poster.pdf">poster</a>]</dd>
+            </li>
+            <dt>2017</dt>
+                <dd><a href="http://ipl2017.gforge.inria.fr/pages/program.html">Inria Project Lab FRATRES</a>
+                annual meeting, Rennes</dd>
+                <dd><a href="https://indico.math.cnrs.fr/event/1831/">WAFU</a>, CEA-EDF-Inria summer school on
+                Waves and Fusion Plasmas, Paris</dd>
+                <dd><a href="https://cceevents.umn.edu/waves-2017">WAVES</a>, 13th International Conference on
+                Mathematical and Numerical Aspects of Wave Propagation, Minneapolis</dd>
+            <dt>2016</dt>
+                <dd><a href="https://www.ljll.math.upmc.fr/~despres/CHROME/chrome.html">ANR CHROME</a> final meeting, LJLL, Paris </dd>
+                <dd>LJLLs students working group <a href="https://ljll.math.upmc.fr/gtt/index.php">(GTT)</a></dd>
+        </dl>
 
 
 
-            <footer>
-                --
-                <a href="https://ljll.math.upmc.fr/fr/presentation/article/parite">LJLL gender equality committee</a>
-                --
-                <a href="https://www.ljll.math.upmc.fr/gtt/">LJLL phd working group</a>
-                --
-                <a href="http://www.netlib.org/na-digest-html/">NA digest</a>
-                --
-                <a href="http://images.math.cnrs.fr/-Revue-de-presse-.html">Images des Mathématique's press review</a>
-                --
-            </footer>
+        <h3>Teaching</h3>
+        <dl>
+            <dt><i>UZH</i></dt>
+                <dd>Practical training in numerics - MAT820: project supervision</dd>
+                <dd>Programming in Python - MAT101: computational classes and project</dd>
+            <dt><i>Sorbonne</i></dt>
+                <dd>Multi-variable functions - 2M216: tutorials</dd>
+                <dd>Measure theory - 3M263: tutorials</dd>
+                <dd>Series of functions and parameter-dependent integrals - 2M261: oral examinations</dd>
+                <dd>Intro to numerical approximation - 2M314: computational classes</dd>
+                <dd>Mathematics for sciences - 1MA001: tutorials</dd>
+                <dd>Python programmation for maths - 3MA100: computational classes</dd>
+                <dd>Numerical methods for ODEs - 3MA236: computational classes</dd>
+        </dl>
 
-
-
+            <h3>Fellow mathematicians</h3>
+            <dt>
+            <a href="https://bthierry.pages.math.cnrs.fr/">Bertrand Thierry</a>,
+            <a href="https://perso.ensta-paris.fr/~ciarlet/index.html">Patrick Ciarlet</a>,
+            <a href="https://www.math.uzh.ch/index.php?id=people&key1=105">Stefan Sauter</a>
+            with whom I have collaborated
+            </dt>
+            <dt>
+            <a href="https://www.math.arizona.edu/~lmig/">Lise-Marie Imbert-Gérard</a>,
+            <a href="https://www.math.nyu.edu/~cerfon/">Antoine Cerfon</a>
+            who work on fusion plasmas 
+            </dt>
+            <dt>
+            <a href="http://www.pallier.org/gabriel/">Gabriel Pallier</a>,
+            <a href="https://mpegon.perso.math.cnrs.fr/index.html">Marc Pegon</a>,
+            who I studied with
+            </dt>
+            <dt>
+            <a href="https://www.uni-muenster.de/IVV5WS/WebHop/user/ograf/">Olivier Graf</a> (general relativity),
+            <a href="https://www.sorbonne-universite.fr/portraits/lydie-uro">Lydie Uro</a> (math applied to facial reconstruction),
+            <a href="https://lgirardin.perso.math.cnrs.fr/">Léo Girardin</a> (math applied to population biology),
+            <a href="https://mate.unipv.it/marcati/">Carlo Marcati</a> (numerical analysis and neural networks for PDEs)
+            who work on very random subjects although we were all at LJLL for our PhDs
+            </dt>
+        </p>
+        </div>
     </div>
 </body>
 
